@@ -1,5 +1,6 @@
 import { check } from '../util/check';
 import { randomNumberGenerator } from '../util/randomNumberGenerator';
+import { swap } from '../util/swap';
 
 export const bubbleSort = () => {
   const randomNumList = randomNumberGenerator();
@@ -16,9 +17,7 @@ export const bubbleSort = () => {
       // 入れ替えるかどうかの判定。添字が大きいほうが中の数字が小さければswap処理実施。
       if (randomNumList[j] > randomNumList[j + 1]) {
         // 添字の大きい数字を一時変数に入れて入れ替える。
-        const tmp = randomNumList[j];
-        randomNumList[j] = randomNumList[j + 1];
-        randomNumList[j + 1] = tmp;
+        swap(randomNumList[j], randomNumList[j + 1]);
       }
     }
   }

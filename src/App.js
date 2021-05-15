@@ -1,6 +1,7 @@
 import './App.css';
 import { bubbleSort } from './sort/bubbleSort';
 import { insertSort } from './sort/insertSort';
+import { selectionSort } from './sort/selectionSort';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <h2>バブルソート</h2>
         {bubbleSort()}
         <h2>選択ソート</h2>
+        {selectionSort()}
         <h2>挿入ソート</h2>
         {insertSort()}
         <h2>クイックソート</h2>
