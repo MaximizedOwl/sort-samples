@@ -26,7 +26,6 @@ export const bubbleSort = () => {
   const endTime = performance.now(); // 終了時間
 
   if (check(randomNumList)) {
-    console.log('List is... ' + randomNumList);
     console.log('OK! ' + (endTime - startTime));
     return 'OK! ' + (endTime - startTime) + ' (ms)';
   }
