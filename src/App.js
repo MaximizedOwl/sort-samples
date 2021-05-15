@@ -1,9 +1,8 @@
-import "./App.css";
-import { bubbleSort } from "./sort/bubbleSort";
+import './App.css';
+import { bubbleSort } from './sort/bubbleSort';
+import { insertSort } from './sort/insertSort';
 
 function App() {
-  const firstNumOfBubble = bubbleSort();
-
   return (
     <div className='App'>
       <header className='App-header'>
@@ -13,9 +12,10 @@ function App() {
         </p>
         <p>ブラウザで更新するたびに配列内の並びは変わる。</p>
         <h2>バブルソート</h2>
-        {firstNumOfBubble}
+        {bubbleSort()}
         <h2>選択ソート</h2>
         <h2>挿入ソート</h2>
+        {insertSort()}
         <h2>クイックソート</h2>
       </header>
     </div>
