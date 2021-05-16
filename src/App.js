@@ -26,6 +26,7 @@ function App() {
         <h4>挿入ソート</h4>
         {insertSort(ascNumList, randomNumList)}
         <h4>クイックソート</h4>
+        {'未実装'}
       </header>
     </div>
   );
