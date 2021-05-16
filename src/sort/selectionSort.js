@@ -1,9 +1,6 @@
 import { check } from '../util/check';
-import { randomNumberGenerator } from '../util/randomNumberGenerator';
 
-export const selectionSort = () => {
-  const randomNumList = randomNumberGenerator();
-
+export const selectionSort = (ascNumList, randomNumList) => {
   const startTime = performance.now(); // 開始時間
 
   /* 
@@ -39,7 +36,7 @@ export const selectionSort = () => {
 
   const endTime = performance.now(); // 終了時間
 
-  if (check(randomNumList)) {
+  if (check(ascNumList, randomNumList)) {
     console.log('OK! ' + (endTime - startTime));
     return 'OK! ' + (endTime - startTime) + ' (ms)';
   } else {

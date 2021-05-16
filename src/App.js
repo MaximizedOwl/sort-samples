@@ -2,23 +2,30 @@ import './App.css';
 import { bubbleSort } from './sort/bubbleSort';
 import { insertSort } from './sort/insertSort';
 import { selectionSort } from './sort/selectionSort';
+import { dataGenerator } from './util/dataGenerator';
+import { randomization } from './util/randomization';
 
 function App() {
+  const ascNumList = dataGenerator();
+  const randomNumList = randomization(ascNumList);
+
   return (
     <div className='App'>
       <header className='App-header'>
-        <h1>ソートのサンプル集</h1>
-        <p>
+        <h2>ソートのサンプル集</h2>
+
+        {`
           0〜9999の数字をランダムに生成して配列に入れ、それらを並び替える速度を計測したもの。
-        </p>
-        <p>ブラウザで更新するたびに配列内の並びは変わる。</p>
-        <h2>バブルソート</h2>
-        {bubbleSort()}
-        <h2>選択ソート</h2>
-        {selectionSort()}
-        <h2>挿入ソート</h2>
-        {insertSort()}
-        <h2>クイックソート</h2>
+          ブラウザで更新するたびに配列内の並びは変わる。
+          `}
+
+        <h4>バブルソート</h4>
+        {bubbleSort(ascNumList, randomNumList)}
+        <h4>選択ソート</h4>
+        {selectionSort(ascNumList, randomNumList)}
+        <h4>挿入ソート</h4>
+        {insertSort(ascNumList, randomNumList)}
+        <h4>クイックソート</h4>
       </header>
     </div>
   );
