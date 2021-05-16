@@ -42,5 +42,7 @@ export const selectionSort = () => {
   if (check(randomNumList)) {
     console.log('OK! ' + (endTime - startTime));
     return 'OK! ' + (endTime - startTime) + ' (ms)';
+  } else {
+    return 'NG...!';
   }
 };
