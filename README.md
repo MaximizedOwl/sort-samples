@@ -2,7 +2,30 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# これはなにか
+
+JavaScript で実装したソートの実行時間を見られるウェブサイトのソースコードです。
+ソートプログラムには、ランダムで生成した 0〜9999 の数字が入っている配列が渡されます。
+※データ生成とソート処理はクライアントサイドで実行されるので気をつけてください。
+
+# サイト
+
+https://maximizedowl.github.io/sort-samples/
+
 # 参考文献
+
+**計算量**
+
+1. https://qiita.com/drken/items/872ebc3a2b5caaa4a0d0
+
+**ソート一般**
+
+1. https://qiita.com/drken/items/44c60118ab3703f7727f
+2. https://www.youtube.com/watch?v=kPRA0W1kECg
+
+**クイックソート**
+
+1. https://www.youtube.com/watch?v=noNoq2BMSsU
 
 **バブルソート**
 
