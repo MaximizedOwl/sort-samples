@@ -6,7 +6,7 @@ JavaScript で実装したソートの実行時間を見られるウェブサイ
 
 # 公開先
 
-https://gifted-snyder-f344e9.netlify.app/
+https://sort-samples.netlify.app/
 
 # 参考文献
 
