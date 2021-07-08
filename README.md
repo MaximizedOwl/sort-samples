@@ -1,19 +1,16 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # これはなにか
 
 JavaScript で実装したソートの実行時間を見られるウェブサイトのソースコードです。
 ソートプログラムには、ランダムで生成した 0〜9999 の数字が入っている配列が渡されます。
-※データ生成とソート処理はクライアントサイドで実行されるので気をつけてください。
+※データ生成とソート処理はクライアントサイドで実行されるので気をつけてください。(Netlify Functions に移行中)
 
-# サイト
+# 公開先
 
-https://maximizedowl.github.io/sort-samples/
+https://gifted-snyder-f344e9.netlify.app/
 
 # 参考文献
 
+<details>
 **計算量**
 
 1. https://qiita.com/drken/items/872ebc3a2b5caaa4a0d0
@@ -39,3 +36,5 @@ https://maximizedowl.github.io/sort-samples/
 **乱数生成**
 
 1. https://qiita.com/pure-adachi/items/77fdf665ff6e5ea22128#javascript%E3%81%A7%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B-1
+
+</details>
