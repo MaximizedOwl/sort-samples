@@ -1,6 +1,7 @@
 const check = require('../util/check');
+const { performance } = require('perf_hooks');
 
-export const insertSort = (ascNumList, randomNumList) => {
+const insertSort = (ascNumList, randomNumList) => {
   const startTime = performance.now(); // 開始時間
 
   /* 
@@ -43,7 +44,7 @@ export const insertSort = (ascNumList, randomNumList) => {
 
   const endTime = performance.now(); // 終了時間
 
-  if (check(ascNumList, randomNumList)) {
+  if (check.check(ascNumList, randomNumList)) {
     console.log('OK! ' + (endTime - startTime));
     return 'OK! ' + (endTime - startTime) + ' (ms)';
   } else {

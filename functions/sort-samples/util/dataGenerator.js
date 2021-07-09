@@ -1,4 +1,4 @@
-export const dataGenerator = () => {
+const dataGenerator = () => {
   // 1~10000までの配列を生成
   const dataSize = 30000;
   let ascNumList = [];
