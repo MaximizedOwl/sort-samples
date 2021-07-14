@@ -11,6 +11,7 @@ https://sort-samples.netlify.app/
 # 参考文献
 
 <details>
+  
 **計算量**
 
 1. https://qiita.com/drken/items/872ebc3a2b5caaa4a0d0
